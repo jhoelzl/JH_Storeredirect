@@ -14,9 +14,6 @@ This small extension simply redirects Magento request URLs (e.g. from search eng
 * Also investigate and test the behaviour of your shop carefully. Maybe some unwanted redirections are performed.
 
 
-## Support
-A Issue Request in this repository
-
 ## Improvements 
 Feel free to make a pull request when you have ideas for improving.
 
