@@ -4,7 +4,11 @@ When you are using Magento Store Views as languages for your Magento shop you pr
 
 This small extension simply redirects Magento request URLs (e.g. from search engine result page) to the correct (or best matching) store view and bypasses the standard 404 magento error page.
 
-When only one store view is found (search is done in table core_url_rewrite) for the request URL, this store view is used for redirection. However, when ttwo ore more store views are found, the best matching store view for the request url is given through the sort order in Backend > Configuration > Manage Stores.
+### How does it work?
+Search is done for column `request_path` in table `core_url_rewrite`. The module does not check admin requests, only frontend requests.
+When only one store view is found for the request URL, this store view is used for redirection. However, when two ore more store views are found, the best matching store view for the request url is given through the sort order in Backend > Configuration > Manage Stores.
+
+This module also works when you have multiple Magento websites. It only performs redirections to the store views that are assigned to the current website.
 
 ## Installation
 * Install the extension via GitHub, [Composer](https://getcomposer.org/), [modman](https://github.com/colinmollenhour/modman) or a similar method. 
