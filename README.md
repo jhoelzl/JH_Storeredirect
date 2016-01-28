@@ -20,6 +20,6 @@ Feel free to make a pull request when you have ideas for improving.
 ## Uninstallation
  
  * Fia FTP: Remove all extension files from your Magento installation
- * Via modman: `modman remove JH_Storeredirct`
+ * Via modman: `modman remove JH_Storeredirect`
  * Via composer, remove the line of your composer.json related to `jh_storeredirect`
  * Optional: Remove entry with path "storeredirect/general/enable" from table core_config_data
