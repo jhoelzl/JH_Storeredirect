@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <JH_Storeredirect>
+            <version>0.1.1</version>
+        </JH_Storeredirect>
+    </modules>
+    <frontend>
+        <routers>
+            <storeredirect>
+                <use>standard</use>
+                <args>
+                    <module>JH_Storeredirect</module>
+                    <frontName>languageselector</frontName>
+                </args>
+            </storeredirect>
+        </routers>
+        
+    </frontend>
+    <global>
+        <helpers>
+            <storeredirect>
+                <class>JH_Storeredirect_Helper</class>
+            </storeredirect>
+        </helpers>
+        <models>
+            <storeredirect>
+                <class>JH_Storeredirect_Model</class>
+            </storeredirect>
+        </models>
+        <events>
+            <controller_front_init_routers>
+                <observers>
+                    <controller_front_init_routers_handler>
+                        <type>singleton</type>
+                        <class>storeredirect/observer</class>
+                        <method>redirectLocale</method>
+                    </controller_front_init_routers_handler>
+                </observers>
+            </controller_front_init_routers>
+        </events>
+    </global>
+    
+
+<adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <storeredirect translate="title" module="storeredirect">
+                                            <title>JH Store Redirect</title>
+                                            <sort_order>2000</sort_order>
+                                        </storeredirect>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+
+
+ <default>
+        <storeredirect>
+            <general>
+                <enable>0</enable>
+            </general>
+        </storeredirect>
+    </default>    
+</config>

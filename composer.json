@@ -1,0 +1,17 @@
+{	
+	"version": "0.1.1",
+    "name": "jh/storeredirect",
+    "license": "GPLv3",
+    "type": "magento-module",
+    "description": "Redirects store view urls (e.g. from search engine result page) to the correct store view, otherwise standard 404 magento error",
+    "homepage": "https://github.com/jhoelzl/JH_RemoveRedundantConfig",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name":"Josef Hoelzl",
+            "email":"hoelzl.josef@gmail.com"
+        }
+    ]
+}
