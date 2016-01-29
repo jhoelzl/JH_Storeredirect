@@ -11,7 +11,7 @@ When only one store view is found for the request URL, this store view is used f
 This module also works when you have multiple Magento websites. It only performs redirections to the store views that are assigned to the current website.
 
 ## Installation
-* Install the extension via GitHub, [Composer](https://getcomposer.org/), [modman](https://github.com/colinmollenhour/modman) or a similar method. 
+* Install the extension via GitHub, [Composer](https://getcomposer.org/), [modman](https://github.com/colinmollenhour/modman) or a similar method. The extension is listed on [packages.firegento.com](http://packages.firegento.com). 
 * Clear the cache, logout from the admin panel and then login again.
 * Enable/Disable redirection in Magento Backend under System > Configuration > JH Modules > Store Redirect.
 
