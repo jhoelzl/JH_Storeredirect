@@ -1,6 +1,6 @@
 # JH_Storeredirect
 
-When you are using Magento Store Views as languages for your Magento shop you probably experiencing 404 error pages when you try to open an URL from another store view and you have disabled storecodes in URLs. By default, Magento routes the request to a 404 error page in the current active store view. This is a major problem when your localized store view URLs are indexed by search engines oder other systems.
+When you are using Magento Store Views as languages for your Magento shop you probably experiencing 404 error pages when you try to open an URL from another store view and you have disabled storecodes in URLs. By default, Magento routes the request to a 404 error page in the current active store view. This is a major problem when your localized store view URLs are indexed by search engines or other systems.
 
 This small extension simply redirects Magento request URLs (e.g. from search engine result page) to the correct (or best matching) store view and bypasses the standard 404 magento error page.
 
