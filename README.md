@@ -6,7 +6,7 @@ This small extension simply redirects Magento request URLs (e.g. from search eng
 
 ### How does it work?
 Search is done for column `request_path` in table `core_url_rewrite`. The module does not check admin requests, only frontend requests.
-When only one store view is found for the request URL, this store view is used for redirection. However, when two ore more store views are found, the best matching store view for the request url is given through the sort order in Backend > Configuration > Manage Stores.
+When only one store view is found for the request URL, this store view is used for redirection. However, when two or more store views are found, the best matching store view for the request url is given through the sort order in Backend > Configuration > Manage Stores.
 
 This module also works when you have multiple Magento websites. It only performs redirections to the store views that are assigned to the current website.
 
